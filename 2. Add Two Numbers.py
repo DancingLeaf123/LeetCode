@@ -14,6 +14,8 @@ class Solution(object):
         result = ListNode(0)
         result_tail = result
         carry = 0
+        print("result", result)
+        print("result.next", result.next)
                 
         while l1 or l2 or carry:            
             val1  = (l1.val if l1 else 0)
@@ -31,3 +33,27 @@ class Solution(object):
 
 an = Solution()
 an.addTwoNumbers(l1,l2)
+
+('count', 0)
+('b result_tail in while', ListNode{val: 0, next: None})
+('b result in while', ListNode{val: 0, next: None})
+('m result_tail in while', ListNode{val: 0, next: ListNode{val: 7, next: None}})
+('m result in while', ListNode{val: 0, next: ListNode{val: 7, next: None}})
+('result_tail in while', ListNode{val: 7, next: None})
+('result in while', ListNode{val: 0, next: ListNode{val: 7, next: None}})
+
+('count', 1)
+('b result_tail in while', ListNode{val: 7, next: None})
+('b result in while', ListNode{val: 0, next: ListNode{val: 7, next: None}})
+('m result_tail in while', ListNode{val: 7, next: ListNode{val: 0, next: None}})
+('m result in while', ListNode{val: 0, next: ListNode{val: 7, next: ListNode{val: 0, next: None}}})
+('result_tail in while', ListNode{val: 0, next: None})
+('result in while', ListNode{val: 0, next: ListNode{val: 7, next: ListNode{val: 0, next: None}}})
+
+('count', 2)
+('b result_tail in while', ListNode{val: 0, next: None})
+('b result in while', ListNode{val: 0, next: ListNode{val: 7, next: ListNode{val: 0, next: None}}})
+('m result_tail in while', ListNode{val: 0, next: ListNode{val: 8, next: None}})
+('m result in while', ListNode{val: 0, next: ListNode{val: 7, next: ListNode{val: 0, next: ListNode{val: 8, next: None}}}})
+('result_tail in while', ListNode{val: 8, next: None})
+('result in while', ListNode{val: 0, next: ListNode{val: 7, next: ListNode{val: 0, next: ListNode{val: 8, next: None}}}})
