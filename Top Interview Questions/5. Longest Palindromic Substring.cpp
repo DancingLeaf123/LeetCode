@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 string s = "babad";
 
 class Solution
@@ -11,6 +12,7 @@ public:
         string p;
         while (i < n)
         {
+            cout << "i:" << i  << "j:" << j  << "p:" << p << "\n";
             int i1 = i, j1 = j;
             while (j1 >= 0 && i1 < n)
             {
@@ -35,7 +37,7 @@ public:
 
 int main()
 {
-    cout << "Hello World!";
+    cout << "Hello World!\n";
     Solution mySolution;
     mySolution.longestPalindrome(s);
     return 0;
