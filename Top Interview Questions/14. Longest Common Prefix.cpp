@@ -6,29 +6,25 @@ using namespace std;
 
 class Solution {
 public:
-    string longestCommonPrefix(vector<string>& str) {
-        int n = str.size();
-        if(n==0) return "";
-        string ans  = "";
-        sort(begin(str), end(str));
-        string a = str[0];
-        string b = str[n-1];
-        
-        for(int i=0; i<a.size(); i++){
-            if(a[i]==b[i]){
-                ans = ans + a[i];
-            }
-            else{
-                break;
+    string longestCommonPrefix(vector<string> &strs) {
+        if (strs.empty()) return "";
+        for (size_t i=0; i<strs.front().size(); ++i) {
+            for (const auto &str : strs){
+                if (i == str.size() || str.at(i) != strs.front().at(i)){
+                    return strs.front().substr(0, i); 
+                }
             }
         }
-        
-        return ans;
-        
+        return strs.front();
     }
 };
+
+
 int main() {
-  string greeting = "Hello";
-  cout << greeting;
+  string greeting = "Hello\n";
+  cout << greeting << endl;
+  vector<string> strs = {"flower","flow","flight"};
+  Solution mys;
+  cout << mys.longestCommonPrefix(strs);
   return 0;
 }
