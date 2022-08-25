@@ -8,7 +8,7 @@ public:
         if (needle.empty()) return 0;
         int n_s = needle.size();
         int h_s = haystack.size();
-        for (size_t i = 0; i < h_s; i++)
+        for (size_t i = 0; i < (h_s-n_s); i++)
         {
             if (haystack.substr(i,n_s) == needle) return i;
         }
