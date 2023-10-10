@@ -46,6 +46,9 @@
         "vector": "cpp",
         "stack": "cpp",
         "algorithm": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "unordered_map": "cpp",
+        "xhash": "cpp",
+        "unordered_set": "cpp"
     }
 }
