@@ -1,11 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <unordered_map>
-#include <algorithm>
-#include <unordered_set>
+#include "leetcode_common.h"
 
-using namespace std;
+// 你的 LeetCode 代码可以从这里开始写
 
 
 class Solution {
@@ -28,7 +23,7 @@ public:
                     currentStreak += 1;
                 }
 
-                longestStreak = max(0, currentStreak);
+                longestStreak = max(longestStreak, currentStreak);
             }
         }
 
