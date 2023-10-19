@@ -12,6 +12,16 @@ struct ListNode {
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
-        
+        unordered_set<ListNode *> visisted;
+        ListNode *prev = nullptr;
+        ListNode *cur = head;
+        while (head)
+        {
+            ListNode* next = head->next;
+            head->next = prev;
+            prev = head;
+            head = next;
+        }
+        return prev;
     }
 };
