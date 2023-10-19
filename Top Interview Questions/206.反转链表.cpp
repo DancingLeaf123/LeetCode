@@ -1,5 +1,4 @@
 #include "leetcode_common.h"
-#include "leetcode_common.h"
 
 struct ListNode {
     int val;
