@@ -50,6 +50,8 @@
         "unordered_map": "cpp",
         "xhash": "cpp",
         "unordered_set": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "ranges": "cpp",
+        "span": "cpp"
     }
 }
