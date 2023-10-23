@@ -52,6 +52,7 @@
         "unordered_set": "cpp",
         "list": "cpp",
         "ranges": "cpp",
-        "span": "cpp"
+        "span": "cpp",
+        "optional": "cpp"
     }
 }
